@@ -4,9 +4,10 @@ import { Route, IndexRoute } from "react-router";
 import CoreLayout from "./layouts/CoreLayout";
 import {
   IndexPage,
-  DomainPage,
-  AuctionPage,
   ProfilePage,
+  HomePage,
+  PortfolioPage,
+  ResumePage,
 } from "./containers/pages/";
 
 import type { Store } from "redux";
@@ -17,8 +18,9 @@ const getRoutes = (store: Store<*, *>) => {
   return (
     <Route path="/" component={ CoreLayout }>
       <IndexRoute component={ IndexPage } />
-      <Route path="/domains" component={ DomainPage } />
-      <Route path="/auctions" component={ AuctionPage } />
+      <Route path="/home" component={ HomePage } />
+      <Route path="/portfolio" component={ PortfolioPage } />
+      <Route path="/resume" component={ ResumePage } />
       <Route path="/profile" component={ ProfilePage } />
     </Route>
   );

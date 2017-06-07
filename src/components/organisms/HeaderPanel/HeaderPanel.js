@@ -49,11 +49,14 @@ export class HeaderPanel extends Component {
     return (
       <div className={styles.root} style={{ display: this.state.signedIn ? 'block' : 'none' }}>
         <div className={styles.navWrap} style={{ zIndex: '1' }}>
-          <span className={styles.nav} onClick={ () => browserHistory.push('/domains') }>
-            Domains
+          <span className={styles.nav} onClick={ () => browserHistory.push('/home') }>
+            Home
           </span>
-          <span className={styles.nav} onClick={ () => browserHistory.push('/auctions') }>
-            Auctions
+          <span className={styles.nav} onClick={ () => browserHistory.push('/portfolio') }>
+            Portfolio
+          </span>
+          <span className={styles.nav} onClick={ () => browserHistory.push('/resume') }>
+            Resume
           </span>
         </div>
         <CenterBox align="right" height="50px">

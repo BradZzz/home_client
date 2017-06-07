@@ -49,6 +49,7 @@ module.exports = {
         "./src/styles"
       ]
     }),
+    require("postcss-svg")(),
     require("postcss-url")(),
     require("postcss-cssnext")(),
     // more plugins...

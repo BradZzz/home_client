@@ -1,7 +1,7 @@
 // @flow
 export { default as LoginPage } from "./LoginPage/LoginPage";
-export { default as AboutPage } from "./AboutPage/AboutPage";
 export { default as IndexPage } from "./IndexPage/IndexPage";
-export { default as DomainPage } from "./DomainPage/DomainPage";
-export { default as AuctionPage } from "./AuctionPage/AuctionPage";
+export { default as HomePage } from "./HomePage/HomePage";
+export { default as ResumePage } from "./ResumePage/ResumePage";
+export { default as PortfolioPage } from "./PortfolioPage/PortfolioPage";
 export { default as ProfilePage } from "./ProfilePage/ProfilePage";

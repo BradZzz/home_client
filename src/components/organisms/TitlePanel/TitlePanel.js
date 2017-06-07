@@ -36,7 +36,7 @@ export class TitlePanel extends Component {
   render() {
     const { signedIn, details, isFetching, name } = this.state
     const alt = details && !isFetching
-    const marquee = alt ? name : 'occas.io'
+    const marquee = 'brad zimmerman'
     return (
       <div className={styles.root} style={{
         padding: signedIn ? '1.8em 0' : '5em 0',

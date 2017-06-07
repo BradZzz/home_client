@@ -8,9 +8,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
   <meta name="format-detection" content="telephone=no,address=no,email=no">
-  <title>Occas.io</title>
+  <title>Brad Zimmerman</title>
   <!-- <link rel="stylesheet" href="./css/style.css"> -->
   <link rel="stylesheet" href="https://raw.githubusercontent.com/billjohnston/react-material-layout/master/dist/react-material-class-layout.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
   <!-- This is so we can have our custom loading bar. Not compiled at build-time -->
   <style>
     #firebaseui-auth-container { background: #ffcdd2; }
@@ -37,6 +39,14 @@
       display: flex;
       -webkit-flex-direction: column;
       flex-direction: column;
+    }
+    .slick-dots {
+      bottom: 15px;
+      width: 100%;
+      margin: 0;
+      list-style: none;
+      text-align: center;
+      z-index: 2;
     }
   </style>
 </head>

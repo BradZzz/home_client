@@ -21,7 +21,7 @@ export class IndexPage extends Component {
       const { dispatch } = this.props
       dispatch(DomainActions.queryDomains({ period : 90 }))
       dispatch(BidActions.queryBids({ }))
-      this.props.router.push('/domains')
+      this.props.router.push('/home')
     }
   }
 
