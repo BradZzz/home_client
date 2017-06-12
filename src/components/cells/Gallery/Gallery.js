@@ -8,6 +8,8 @@ export default class Gallery extends Component {
   constructor(props) {
     super(props)
     this.state = {
+      pics : ["../images/profile_01.jpg", "../images/profile_02.jpg", "../images/profile_03.jpg",
+        "../images/profile_04.jpg", "../images/profile_05.jpg", "../images/profile_06.jpg"],
       settings : {
         dots: true,
         infinite: true,
@@ -18,19 +20,24 @@ export default class Gallery extends Component {
     }
   }
 
+  renderImage = (img, idx) => {
+    return (
+      <div key={ idx }>
+        <img src={ img } className={ styles.image }/>
+      </div>
+    )
+  }
+
   render() {
-    const { settings } = this.state
+    const { settings, pics } = this.state
     return (
       <div className={ styles.root }>
         <div className={ styles.overlay }></div>
-        <Slider {...settings}>
-          <div><img src="../images/profile_01.jpg" className={ styles.image }/></div>
-          <div><img src="../images/profile_02.jpg" className={ styles.image }/></div>
-          <div><img src="../images/profile_03.jpg" className={ styles.image }/></div>
-          <div><img src="../images/profile_04.jpg" className={ styles.image }/></div>
-          <div><img src="../images/profile_05.jpg" className={ styles.image }/></div>
-          <div><img src="../images/profile_06.jpg" className={ styles.image }/></div>
-        </Slider>
+        <div className={ styles.imgParent }>
+          <Slider {...settings}>
+            { pics.map(this.renderImage) }
+          </Slider>
+        </div>
       </div>
     )
   }

@@ -15,7 +15,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
   <!-- This is so we can have our custom loading bar. Not compiled at build-time -->
   <style>
-    #firebaseui-auth-container { background: #ffcdd2; }
+    #firebaseui-auth-container { background: #c5cae9; }
     .firebaseui-id-page-callback { display: none !important; }
     .center {
       position: fixed;
@@ -33,7 +33,6 @@
       -webkit-flex-direction: row;
       flex-direction: row;
     }
-
     .columnFlex {
       display: -webkit-flex;
       display: flex;
@@ -41,7 +40,7 @@
       flex-direction: column;
     }
     .slick-dots {
-      bottom: 15px;
+      bottom: 25px;
       width: 100%;
       margin: 0;
       list-style: none;
@@ -52,15 +51,16 @@
 </head>
 <body>
   <div id="react-root"></div>
-  <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
   <script>
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyDs_UalXlf6uzpPcPX0IBVF0SD61fgb1U8",
-    authDomain: "xdomio-1fdcc.firebaseapp.com",
-    databaseURL: "https://xdomio-1fdcc.firebaseio.com",
-    storageBucket: "xdomio-1fdcc.appspot.com",
-    messagingSenderId: "1002071359895"
+    apiKey: "AIzaSyBIBShwDv4mJ37DZIbtXeP2U8vp0ZHPoA0",
+    authDomain: "bradpage-a7719.firebaseapp.com",
+    databaseURL: "https://bradpage-a7719.firebaseio.com",
+    projectId: "bradpage-a7719",
+    storageBucket: "bradpage-a7719.appspot.com",
+    messagingSenderId: "399989760343"
   };
   firebase.initializeApp(config);
   </script>
